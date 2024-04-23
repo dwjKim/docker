@@ -1,0 +1,21 @@
+{% if todo_list %}
+    <ul>
+        {% for todo in todo_list %}
+        <li><a href="/polls/{{ todo.id }}/">{{ todo.ToDoListText }}</a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <a {{ todo_list }}>
+{% endif %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>To-do list</title>
+</head>
+<body>
+
+</body>
+</html>
